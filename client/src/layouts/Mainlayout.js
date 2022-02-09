@@ -1,11 +1,10 @@
 import React from 'react'
 import { Navbar } from '../components/Navbar'
-export const Mainlayout = ({ children }) => {
+export const Mainlayout = ( props ) => {
   return (
-  
-<>
-        <Navbar/>
-            <main>{children}</main>
-            </>
+    <React.Fragment>
+      <Navbar></Navbar>
+  <main>{props.children}</main>
+  </React.Fragment>
   )
 }

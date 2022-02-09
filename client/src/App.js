@@ -15,13 +15,11 @@ function App() {
     <Router>
   <Mainlayout>
     <Routes>
-      <Route path="/">
-<Home/>
-      </Route>
-      <Route path="/about">
-        <About>
+      <Route path="/" element={<Home/>}>
 
-        </About>
+      </Route>
+      <Route path="/about" element={<About/>}>
+      
       </Route>
     </Routes>
   
