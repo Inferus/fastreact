@@ -2,15 +2,17 @@
   "name": "fastreact",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon core/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^7.0.0",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "nodemon": "^2.0.15"
   }
